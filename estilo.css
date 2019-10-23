@@ -1,5 +1,13 @@
-body {
-    background-color: #c2edc4;
+body:before {
+    content:"";
+    position:fixed;
+    left:0;
+    right:0;
+    z-index:-1;
+    background-image: url('aparatos.jpg');
+    filter:blur(10px);
+    height:150%;
+    width:150%
 }
 
 ul {
@@ -30,7 +38,7 @@ ul {
   }
 
   ul {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
   }
