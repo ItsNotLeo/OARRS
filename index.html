@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <style>
+                .mySlides {display:none;}
+        </style> 
     <meta charset="UTF-8"/>
-    <title>OARSS</title>
+    <title>OARRS</title>
+    <link rel="icon" href="logobrancasemfundo.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body style="font-family: arial">
-    <h1 style="text-align: center;">Observatório das Áreas de Risco do Rio Grande do Sul</h1>
+    <div class="navbar">
+        <li><a href="index.html"> <i class="material-icons">home</i> ínicio</a></li>
+        <li><a href="news.html"> <i class="material-icons">library_books</i> Notícias</a></li>
+        <li style="float:right"><a href="about.html"> <i class="material-icons">face</i> Sobre Nós</a></li>
+    </div>
+    <br>
+    <br>
+    <center>
+        <img src="banner.png" width="35%" height="35%"/>
+    </center>
+    <script>
+            var myIndex = 0;
+            carousel();
+    
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+    </script>
+    <br>
+    <br>
+    <div class="box">
+        <h2 class="titulo">O que são áreas de risco?</h2>
+        <body class="texto">Áreas de risco são regiões onde é recomendada a não construção de casas ou instalações, pois são muito expostas a desastres naturais, como desabamentos e inundações. Essas regiões vem crescendo constantemente nos últimos 10 anos, principalmente devido à própria ação humana. No Brasil, vêm sendo realizados vários projetos no sentido de reestruturação de algumas áreas, conscientização da população, etc.
+        <p>As principais áreas de risco são aquelas sob encostas de morros inclinados ou à beira de rios. Existem vários serviços de assistência a população em casos de emergência. A principal instituição responsável pelo monitoramento das áreas de risco é a Defesa Civil.</p></body>
+    </div>
 </body>
 </html>
