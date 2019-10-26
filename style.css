@@ -17,16 +17,14 @@ body:before {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  li a:hover {
-    background-color: #5e7da0;
-  }
-  
-  li {
     float: left;
   }
 
-  .navbar {
+  li a:hover {
+    background-color: #5e7da0;
+  }
+
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -35,6 +33,7 @@ body:before {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    left: 0px
   }
 
 .box {
@@ -42,7 +41,7 @@ body:before {
   width: 90%;
   border: 15px, white;
   background: white;
-  padding: 5px;
+  padding: 5px 15px;
   box-shadow: -5px -5px 10px #5e7da0;
 }
 
@@ -65,4 +64,9 @@ body:before {
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
+}
+
+.banner{
+  display: block;
+  margin-left: -700px;
 }
