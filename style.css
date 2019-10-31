@@ -24,7 +24,7 @@ body:before {
     background-color: #5e7da0;
   }
 
-.navbar {
+.na {
     position: fixed;
     top: 0;
     width: 100%;
@@ -37,11 +37,13 @@ body:before {
   }
 
 .box {
+  margin:0 auto;
+  margin-top: 20px;
   margin: auto;
   width: 90%;
   border: 15px, white;
   background: white;
-  padding: 5px 15px;
+  padding: 5px 15px 5px 15px;
   box-shadow: -5px -5px 10px #5e7da0;
 }
 
@@ -69,4 +71,14 @@ body:before {
 .banner{
   display: block;
   margin-left: -700px;
+  padding: 20px;
+}
+
+iframe {
+  width: 700px;
+  height: 500px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
