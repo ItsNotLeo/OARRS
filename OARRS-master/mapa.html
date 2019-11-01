@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(202, 36, 218);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Senha">
+        <button id="loginButton">Login</button>
+    </div>
+
+    <script>
+        document.getElementById('loginButton').addEventListener('click', () => {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            alert(`Username: ${username}\nPassword:${password}`);
+        });
+    </script>
+  </body>
+</html>
+
