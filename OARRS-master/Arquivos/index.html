@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+                .mySlides {display:none;}
+        </style> 
+    <meta charset="UTF-8"/>
+    <title>OARSS</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+        
+
+<body style="font-family: arial">
+    <ul>
+        <li><a href="index.html"> <i class="material-icons" title="Home">home</i></a></li>
+        <li><a href="news.html"> <i class="material-icons" title="Noticias">library_books</i></a></li>
+        <li style="float:right"><a href="about.html"> <i class="material-icons" title="Sobre">face</i></a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <center>
+        <text style="font-family: arial; font-size: 40px">
+            Observatório das Áreas de Risco do Rio Grande do Sul
+        </text>
+    </center>
+    <br>
+    <center>
+        <img class="mySlides" src="01.jpg" height="350" width="75%">
+        <img class="mySlides" src="02.jpg" height="350" width="75%">
+        <img class="mySlides" src="03.jpg" height="350" width="75%">
+        <img class="mySlides" src="04.jpg" height="350" width="75%">
+       
+    </center>
+    <script>
+        
+            var myIndex = 0;
+            carousel();
+    
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+    </script>
+</body>
+</html>

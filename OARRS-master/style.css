@@ -1,0 +1,103 @@
+body:before {
+    content:"";
+    position:fixed;
+    left:0;
+    right:0;
+    z-index:-1;
+    background-image: url('aparatos.jpg');
+    filter:blur(10px);
+    height:100%;
+    width:100%;
+    transform: scale(1.1);
+}
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+  }
+
+  li a:hover {
+    background-color: #5e7da0;
+  }
+
+.na {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    left: 0px
+  }
+
+.box {
+  margin:0 auto;
+  margin-top: 20px;
+  margin: auto;
+  width: 90%;
+  border: 15px, white;
+  background: white;
+  padding: 5px 15px 5px 15px;
+  box-shadow: -5px -5px 10px #5e7da0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.material-icons{
+  vertical-align: middle;
+  display: inline;
+}
+
+.titulo{
+  text-align: center;
+}
+
+.texto{
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner{
+  display: block;
+  margin-left: -700px;
+  padding: 20px;
+}
+
+iframe {
+  width: 700px;
+  height: 500px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.box2 {
+  margin:0 auto;
+  margin-top: 20px;
+  margin: auto;
+  width: 40%;
+  border: 15px, white;
+  background: white;
+  padding: 5px 15px 5px 15px;
+  box-shadow: -5px -5px 10px #5e7da0;}
+.box3 {
+  margin:0 auto;
+  margin-top: 20px;
+  margin: auto;
+  width: 100%;
+  border: 15px, white;
+  background: white;
+  padding: 5px 15px 5px 15px;
+  box-shadow: -5px -5px 10px #5e7da0;
+}
