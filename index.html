@@ -3,41 +3,6 @@
 <head>
         <style>
                 .mySlides {display:none;}
-        </style> 
-    <meta charset="UTF-8"/>
-    <title>OARRS</title>
-    <link type="text/css" rel="stylesheet" href="estilo.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-</head>
 
-<body style="font-family: arial">
-    <ul>
-        <li><a href="index.html"> <i class="material-icons">home</i></a></li>
-        <li><a href="news.html"> <i class="material-icons">library_books</i></a></li>
-        <li style="float:right"><a href="about.html"> <i class="material-icons">face</i></a></li>
-    </ul>
-    <br>
-    <br>
-    <center>
-        <img src="banner.png" width="35%" height="35%"/>
-    </center>
-    <script>
-        
-            var myIndex = 0;
-            carousel();
-    
-            function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-    </script>
 </body>
 </html>
